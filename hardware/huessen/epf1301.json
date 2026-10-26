@@ -1,0 +1,22 @@
+{
+  "tesserae_compat": "1.x",
+  "id": "huessen_epf1301",
+  "name": "Huessen EPF1301",
+  "vendor": "Huessen",
+  "url": "https://github.com/dmellok/tesserae-device-firmware",
+  "icon": "device-tablet",
+  "description": "13.3 inch E Ink Spectra 6 picture frame (EL133UF1 dual-controller glass) on an ESP32-S3 with octal PSRAM, battery and USB-C, sold as the Huessen EPF1301. Speaks Tesserae's v1 REST device API when flashed with the tesserae-device-firmware ESP-IDF build (boards/huessen_epf1301.h). Server-side pack via esp32_bin produces a 4-bpp Spectra 6 buffer (960000 bytes) that the firmware paints without any on-device quantise.",
+  "protocol": "esp32_client",
+  "panel": {
+    "w": 1200,
+    "h": 1600,
+    "orientation": "portrait",
+    "name": "13.3 inch Spectra 6 ePaper (1200x1600)",
+    "gamut": "spectra_6",
+    "native_w": 1200,
+    "native_h": 1600
+  },
+  "refresh_floor_s": 60,
+  "image_format": "bin",
+  "notes_md": "Flash the tesserae-device-firmware `huessen-epf1301` build over the frame's USB-C port (USB-Serial-JTAG; back up the stock flash first, the install replaces the bootloader). Confirmed on real hardware running tesserae-device-firmware: palette correct, both controller halves in place, row 0 at the top of the portrait frame, and server frames painting end to end. Wire format is exactly 960000 bytes, the seeed_reterminal_e1004 format. Full refresh takes about 19 s. The battery must be fitted; the panel will not paint on USB power alone."
+}

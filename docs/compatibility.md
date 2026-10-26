@@ -228,6 +228,12 @@ Hardware supported by community-authored firmware. Each SKU below links to the f
 | [Soldered Inkplate 13SPECTRA](https://soldered.com/products/inkplate-13spectra) | 1600×1200 | `spectra_6` | `esp32_client` (inherit) | `soldered_inkplate_13spectra` |
 | [Soldered Inkplate 6COLOR](https://soldered.com/products/inkplate-6color-e-paper-display) | 600×448 | `inky_7colour` | `esp32_client` (inherit) | `soldered_inkplate_6color` |
 
+### Huessen
+
+| SKU | Panel | Gamut | Protocol / Renderer | Kind id |
+|---|---|---|---|---|
+| [Huessen EPF1301](https://github.com/dmellok/tesserae-device-firmware) | 1200×1600 portrait | `spectra_6` | `esp32_client` (inherit) | `huessen_epf1301` |
+
 ## What's been tested on real hardware
 
 Honest status from the maintainer's own bench. Untested doesn't mean broken, it means nobody's confirmed it yet. Got one working? [Open a PR or issue](https://github.com/dmellok/tesserae/issues) and we'll mark it.

@@ -6,6 +6,14 @@ All notable changes to Tesserae are recorded here. Format loosely follows
 
 ## [Unreleased]
 
+### Added
+
+- **Huessen EPF1301 support.** The 13.3" Spectra 6 frame (EL133UF1
+  dual-controller glass on an ESP32-S3) is hardware kind `huessen_epf1301`
+  for the tesserae-device-firmware `huessen-epf1301` build. It takes the
+  same 960000-byte 4bpp frame as the `seeed_reterminal_e1004`. Checked on
+  hardware: palette, both controller halves, and server frames end to end.
+
 ## [0.480.1], 2026-10-26
 
 ### Fixed
